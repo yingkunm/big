@@ -1,0 +1,48 @@
+.head{
+    background-color: rgb(211, 60, 60);
+    height: 50px;
+    width:100%;
+
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+  }
+.img1{
+    margin: 5px;
+    float: left;
+    width: initial;
+}
+.img2{
+    margin: 5px;
+    margin: auto;
+}
+.img3{
+    margin: 5px;
+    float: right;
+}
+.navbar{
+    background-color: rgb(244 245 246);
+    height:40px;
+
+}
+.nav {
+    display: flex;
+    overflow: auto;
+    margin: auto ;
+    padding-left: 10px;
+    height: max-content;
+  }
+.nav.li {
+    display: flex;
+    flex-direction: row;
+    font-size:medium;
+  }
+.a {
+    color: #505050;
+    width:auto;
+  }
+
+.first {
+    color: #f85959;
+  }
