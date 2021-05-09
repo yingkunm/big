@@ -85,6 +85,13 @@ export default (req, res) => {
         recommend: 29,
         img: "/img/img7.jfif",
       },
+      {
+        mode: "words&pic",
+        title: "12312323234、中央文明办等6部门启动第八届全国道德模范评选表彰活动",
+        media: "央视新闻",
+        recommend: 29,
+        img: "/img/img7.jfif",
+      },
     ],
   });
 };
