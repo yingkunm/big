@@ -6,9 +6,15 @@
 }
 .singlecontainer,
 .wandpcontainer,
-.threepiccontainer,
+.threepiccontainer{
+    display: flex;
+    margin-top: 10px;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.6);
+    height: auto;
+}
 .bigpiccontainer{
     display: flex;
+    flex-direction: column;
     margin-top: 10px;
     border-bottom: 1px solid rgba(221, 221, 221, 0.6);
     height: auto;
