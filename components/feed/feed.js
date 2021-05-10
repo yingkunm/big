@@ -47,7 +47,7 @@ export default function feed(){
                          <div className={styles.single}>
                             <h2 className={styles.h}>{i.title}</h2>
                             <div className={styles.footbar}>
-                                <div className={styles.set_top}>置顶</div>
+                                <span className={styles.set_top}>&nbsp;置顶</span>
                                 <a>&nbsp;{i.media}</a>
                                 <a>&nbsp;评论&nbsp;{i.recommend}</a>
                                 <a>&nbsp;{i.time}</a>
@@ -96,7 +96,7 @@ export default function feed(){
                         
                         </div>
                         <div className={styles.rightimg}>
-                            <img src={i.pic} />
+                            <img src={i.img} />
                         </div>
                     </div>
                     </a>
@@ -113,9 +113,9 @@ export default function feed(){
                         <div className={styles.threepiccontainer}>
                         <h2 className={styles.h}>{i.title}</h2>
                         <ul className={styles.pics}>
-                            <img src={i.pic[0]} />
-                            <img src={i.pic[1]} />
-                            <img src={i.pic[2]} />
+                            <img src={i.img[0]} />
+                            <img src={i.img[1]} />
+                            <img src={i.img[2]} />
                         </ul>
                         <div className={styles.footbar}>
                                 <a>&nbsp;{i.media}</a>
@@ -135,7 +135,7 @@ export default function feed(){
                     <Link href='/secondpage'>
                     <a>
                         <h2 className={styles.h}>{i.title}</h2>
-                        <img src={i.pic} />
+                        <img src={i.img} />
                         <div className={styles.footbar}>
                                 <a>&nbsp;{i.media}</a>
                                 <a>&nbsp;评论&nbsp;{i.recommend}</a>
