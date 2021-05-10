@@ -6,7 +6,7 @@ export default (req, res) => {
     code: 200,
     data: [
       {
-        mode: "single",
+        mode: "top",
         top: true,
         title: "联播+ | 习近平：你们是中国沟通的桥梁",
         media: "央视网新闻",
@@ -14,7 +14,7 @@ export default (req, res) => {
         time: "1小时前"
       },
       {
-        mode: "single",
+        mode: "top",
         top: true,
         title: "习近平这次指示，事关共同富裕",
         media: "海外网",
@@ -85,13 +85,7 @@ export default (req, res) => {
         recommend: 29,
         img: "/img/img7.jfif",
       },
-      {
-        mode: "words&pic",
-        title: "12312323234、中央文明办等6部门启动第八届全国道德模范评选表彰活动",
-        media: "央视新闻",
-        recommend: 29,
-        img: "/img/img7.jfif",
-      },
+      
     ],
   });
 };

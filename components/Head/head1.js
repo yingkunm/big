@@ -23,6 +23,7 @@ export default function head1() {
                 <a className={styles.a}>家居&nbsp;</a>
                 
             </ul>
+            
 
         </div>
         </div>
