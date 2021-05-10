@@ -113,9 +113,9 @@ export default function feed(){
                         <div className={styles.threepiccontainer}>
                         <h2 className={styles.h}>{i.title}</h2>
                         <ul className={styles.pics}>
-                            <img src={i.pic[0]} className={styles.threepic}/>
-                            <img src={i.pic[1]} className={styles.threepic}/>
-                            <img src={i.pic[2]} className={styles.threepic}/>
+                            <img src={i.img[0]} className={styles.threepic}/>
+                            <img src={i.img[1]} className={styles.threepic}/>
+                            <img src={i.img[2]} className={styles.threepic}/>
                         </ul>
                         <div className={styles.footbar}>
                                 <a>&nbsp;{i.media}</a>
