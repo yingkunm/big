@@ -17,7 +17,7 @@ export default function Secondpage(){
               <div className={styles.author_name}>新华网客户端</div>
               <div className={styles.details}>2小时前 · 新华网官方账号</div>
               </div>
-              <div className={styles.subscribe}>关注</div>
+              <div className={styles.subscribe}>&nbsp;&nbsp;关注&nbsp;&nbsp;</div>
             </div>
           </div>
 
