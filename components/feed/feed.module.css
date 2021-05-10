@@ -2,25 +2,40 @@
     background-color: white;
     padding-left: 10px;
     padding-right: 10px;
-
+    top: 90px;
+    position: relative;
 }
 .singlecontainer,
 .wandpcontainer,
+.bigpiccontainer,
 .threepiccontainer{
     display: flex;
     margin-top: 10px;
     border-bottom: 1px solid rgba(221, 221, 221, 0.6);
     height: auto;
 }
-.bigpiccontainer{
-    display: flex;
+.bigpiccontainer,
+.threepiccontainer{
     flex-direction: column;
-    margin-top: 10px;
-    border-bottom: 1px solid rgba(221, 221, 221, 0.6);
-    height: auto;
 }
 
-
+.threepiccontainer .pics{
+    display: flex;
+    padding: 0;
+}
+.threepiccontainer img{
+    width: 33.3%;
+}
+.wandpcontainer .rightimg{
+    width: 70%;
+    padding: 20px 0;
+}
+.wandpcontainer img{
+    width: 100%;
+}
+.bigpiccontainer img{
+    width: 100%;
+}
 
 
 .h{
@@ -30,7 +45,7 @@
     line-height: 25px;
     margin-bottom: 5px;
 }
-.footbar a{
+.footbar a, .set_top{
     color: #999;
   overflow: hidden;
   font-size: 10px;
@@ -41,4 +56,10 @@
 }
 .wandpcontainer.rightimg{
     float:right
+}
+.set_top{
+    color: #f85959;
+    border-color: rgba(248, 89, 89, 0.5);
+    border-radius: 6px;
+    border-style: solid;
 }

@@ -6,7 +6,7 @@ export default (req, res) => {
     code: 200,
     data: [
       {
-        mode: "single",
+        mode: "top",
         top: true,
         title: "联播+ | 习近平：你们是中国沟通的桥梁",
         media: "央视网新闻",
@@ -14,7 +14,7 @@ export default (req, res) => {
         time: "1小时前"
       },
       {
-        mode: "single",
+        mode: "top",
         top: true,
         title: "习近平这次指示，事关共同富裕",
         media: "海外网",
@@ -55,7 +55,7 @@ export default (req, res) => {
         title: "被恶意诋毁、丑闻缠身的杨振宁，背后藏着怎样的真相？",
         media: "历史文社",
         recommend: 5960,
-        pic: ["/img/img3.jfif", "/img/img4.jfif", "/img/img5.jfif"],
+        img: ["/img/img3.jfif", "/img/img4.jfif", "/img/img5.jfif"],
       },
       {
         mode: "single",
