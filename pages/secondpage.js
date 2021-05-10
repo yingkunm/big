@@ -1,5 +1,6 @@
 import styles from '../components/Secondpage.module.css'
 import Image from 'next/image'
+import Link from 'next/link'
 export default function Secondpage(){
     return(
       <div className={styles.container}>
@@ -34,7 +35,10 @@ export default function Secondpage(){
         </div>
       </div>
         </div>
-
+      <Link href='/'>
+        <a><div className={styles.back}>去今日头条看更多内容</div></a>
+      </Link>
+      
      
       </div>
     )

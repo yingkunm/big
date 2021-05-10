@@ -121,3 +121,11 @@
     font-weight: 400!important;
     -webkit-text-stroke-width: .5px!important;
 }
+.back{
+    color: #fff;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 3px;
+    background: #f04142;
+}
