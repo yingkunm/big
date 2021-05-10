@@ -55,7 +55,7 @@ export default (req, res) => {
         title: "被恶意诋毁、丑闻缠身的杨振宁，背后藏着怎样的真相？",
         media: "历史文社",
         recommend: 5960,
-        pic: ["/img/img3.jfif", "/img/img4.jfif", "/img/img5.jfif"],
+        img: ["/img/img3.jfif", "/img/img4.jfif", "/img/img5.jfif"],
       },
       {
         mode: "single",
