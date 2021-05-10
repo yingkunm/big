@@ -1,0 +1,107 @@
+.container{
+    padding-top: 10px;
+    
+
+}
+  
+.topbar{
+    background-color: #fff;
+    height: 1rem;
+    position: relative;
+    z-index: 99;
+}
+.logo{
+    width: .72rem;
+    height: .72rem;
+    position: absolute;
+    margin: .14rem 0;
+    left: .4rem;
+    border: .02rem solid #eee;
+    border-radius: .14rem;
+}
+.slogan{
+    font-size: .28rem;
+    color: #222;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 1.22rem;
+    line-height: 1rem;
+}
+.open{
+    position: absolute;
+    margin: .22rem 0;
+    right: .4rem;
+    width: 1.44rem;
+    height: .56rem;
+}
+.wrapper{
+    background-color: #fff;
+}
+.art_header{
+   
+    position: relative;
+    padding: .4rem .4rem .56rem;
+    
+}
+.art_header h1{
+    line-height: .72rem;
+    font-weight: 700;
+    color: #222;
+    font-size: .48rem;
+    margin-bottom: .32rem;
+}
+.author{
+    display: flex;
+    align-items: center;
+}
+.media_pic{
+    width: .72rem;
+    height: .72rem;
+    position: relative;
+}
+.author_information{
+    margin-left: .16rem;
+    margin-top: -.02rem;
+}
+.author_name{
+    font-size: .28rem;
+    line-height: .32rem;
+    color: #222;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+.details{
+    margin-top: .14rem;
+    font-size: .24rem;
+    line-height: .28rem;
+    color: #999;
+    max-width: 4.4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.subscribe{
+    margin-left: auto;
+    padding: .08rem .26rem;
+    color: #222;
+    font-size: .28rem;
+    line-height: .4rem;
+    border-radius: .06rem;
+}
+.art_container{
+
+}
+.words{
+    margin: 0 20px;
+    padding: 0;
+}
+.words p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.word strong{
+    font-weight: 400!important;
+    -webkit-text-stroke-width: .5px!important;
+}

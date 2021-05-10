@@ -1,6 +1,6 @@
 import styles from "./feed.module.css"
 import React,{useEffect,useState} from "react";
-
+import Link from 'next/link'
 export default function feed(){
     const [list, setList] = useState([]);
 
@@ -41,8 +41,10 @@ export default function feed(){
         {list.map((i) => {
             if(i.mode==="top"){
                 return (
-                    <div className={styles.singlecontainer}>
-                        <div className={styles.single}>
+                    <div className={styles.singlecontainer} >
+                    <Link href='/secondpage'>
+                    <a>
+                         <div className={styles.single}>
                             <h2 className={styles.h}>{i.title}</h2>
                             <div className={styles.footbar}>
                                 <div className={styles.set_top}>置顶</div>
@@ -51,12 +53,18 @@ export default function feed(){
                                 <a>&nbsp;{i.time}</a>
                             </div>
                         </div>
+                    </a>
+                       
+                    </Link>
+                        
                     </div>
                 ); 
             }else if(i.mode==="single"){
                     return(
                         <div className={styles.singlecontainer}>
-                        <div className={styles.single}>
+                        <Link href='/secondpage'>
+                        <a>
+                            <div className={styles.single}>
                             <h2 className={styles.h}>{i.title}</h2>
                             <div className={styles.footbar}>
                                 <a>&nbsp;{i.media}</a>
@@ -64,12 +72,19 @@ export default function feed(){
                                 <a>&nbsp;{i.time}</a>
                             </div>
                         </div>
+                        </a>
+                            
+                        </Link>
+                        
                     </div>
                     );
                                                 
             }else if(i.mode==="words&pic"){
                 return (
-                    <div className={styles.wandpcontainer}>
+                    <>
+                    <Link href='/secondpage'>
+                    <a>
+                        <div className={styles.wandpcontainer}>
                         <div className={styles.left}>
                             
                             <h2 className={styles.h}>{i.title}</h2>
@@ -84,10 +99,18 @@ export default function feed(){
                             <img src={i.pic} />
                         </div>
                     </div>
+                    </a>
+                        
+                    </Link>
+                    </>
+                    
                 );
             }else if(i.mode==="three_pic"){
                 return(
-                    <div className={styles.threepiccontainer}>
+                    <>
+                    <Link href='/secondpage'>
+                    <a>
+                        <div className={styles.threepiccontainer}>
                         <h2 className={styles.h}>{i.title}</h2>
                         <ul className={styles.pics}>
                             <img src={i.pic[0]} />
@@ -100,10 +123,17 @@ export default function feed(){
                                 <a>&nbsp;{i.time}</a>
                         </div>
                     </div>
+                    </a>
+                        
+                    </Link>
+                    </>
+                    
                 );
             }else if(i.mode==="big_pic"){
                 return(
                     <div className={styles.bigpiccontainer}>
+                    <Link href='/secondpage'>
+                    <a>
                         <h2 className={styles.h}>{i.title}</h2>
                         <img src={i.pic} />
                         <div className={styles.footbar}>
@@ -111,6 +141,10 @@ export default function feed(){
                                 <a>&nbsp;评论&nbsp;{i.recommend}</a>
                                 <a>&nbsp;{i.time}</a>
                         </div>
+                    </a>
+                        
+                    </Link>
+                        
                     </div>
                 );
             }
