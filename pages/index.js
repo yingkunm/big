@@ -3,15 +3,17 @@ import fetch from 'isomorphic-unfetch'
 import styles from '../styles/Home.module.css'
 import Head1 from '../components/Head/head1'
 import Feed from '../components/feed/feed'
+import Footer from '../components/Footer/footer'
 import Link from 'next/link'
 import Head from 'next/head'
 const Home=(props)=>(
   
     <div className={styles.container}>
     <Head>
-        <title>今日头条</title>
+        <title>今日头条 - TouTiao.com</title>
     </Head>
     <Head1/>
+    <Footer/>
     <div className={styles.news_container}>
     {props.feedList.map((i) => {
             if(i.mode==="top"){
