@@ -4,10 +4,13 @@ import styles from '../styles/Home.module.css'
 import Head1 from '../components/Head/head1'
 import Feed from '../components/feed/feed'
 import Link from 'next/link'
+import Head from 'next/head'
 const Home=(props)=>(
   
     <div className={styles.container}>
-    
+    <Head>
+        <title>今日头条</title>
+    </Head>
     <Head1/>
     <div className={styles.news_container}>
     {props.feedList.map((i) => {
