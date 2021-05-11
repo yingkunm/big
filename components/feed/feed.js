@@ -2,7 +2,7 @@ import styles from "./feed.module.css"
 import React,{useEffect,useState} from "react";
 import Link from 'next/link'
 
-export default function feed(data){
+export default function feed(){
     const [list, setList] = useState([]);
 
     useEffect(() => {
