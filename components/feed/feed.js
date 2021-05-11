@@ -1,7 +1,8 @@
 import styles from "./feed.module.css"
 import React,{useEffect,useState} from "react";
 import Link from 'next/link'
-export default function feed(){
+
+export default function feed(data){
     const [list, setList] = useState([]);
 
     useEffect(() => {
@@ -11,29 +12,39 @@ export default function feed(){
         });
       }, []);
 
-    const [scrollPosition, setScrollPosition] = useState({});
 
-    useEffect(() => {    
+    useEffect(() => { 
         const handler = () => {
-          setScrollPosition({
-            scrollH: document.documentElement.scrollHeight, 
-            clientH: document.documentElement.clientHeight,
-            scrollT: document.documentElement.scrollTop,
-          });
+            let scrollH = document.documentElement.scrollHeight, 
+                clientH = document.documentElement.clientHeight,
+                scrollT = document.documentElement.scrollTop;
+            if(scrollH-clientH<=scrollT+400){
+                fetch("/api/news").then(async (res) => {
+                    const resp = await res.json();
+                    setList(l=>[...l,...resp.data]);
+                });
+            }
         };
 
-        window.addEventListener('scroll', handler, { passive: true });
+        window.addEventListener('scroll', throttle(handler,500), { passive: true });
 
         return () => {
-          window.removeEventListener('scroll', handler);
+          window.removeEventListener('scroll', throttle(handler,500));
         };
     }, []);
 
-    if(scrollPosition.scrollH-scrollPosition.clientH<=scrollPosition.scrollT+400) {
-        fetch("/api/news").then(async (res) => {
-            const resp = await res.json();
-            setList(l=>[...l,...resp.data]);
-        });
+    var throttle = function(func, delay){
+        var timer = null;
+        return function(){
+            var context = this;
+            var args = arguments;
+            if(!timer){
+                timer = setTimeout(function(){
+                    func.apply(context, args);
+                    timer = null;
+                },delay);
+            }
+        }
     }
 
     return(
