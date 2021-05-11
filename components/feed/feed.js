@@ -18,7 +18,7 @@ export default function feed(data){
             let scrollH = document.documentElement.scrollHeight, 
                 clientH = document.documentElement.clientHeight,
                 scrollT = document.documentElement.scrollTop;
-            if(scrollH-clientH<=scrollT+400){
+            if(scrollH-clientH<=scrollT+20){
                 fetch("/api/news").then(async (res) => {
                     const resp = await res.json();
                     setList(l=>[...l,...resp.data]);
