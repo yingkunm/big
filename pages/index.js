@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import fetch from 'isomorphic-unfetch'
 import styles from '../styles/Home.module.css'
 import Head1 from '../components/Head/head1'
-import Feed from '../components/feed/feed'
 import Footer from '../components/Footer/footer'
 import Link from 'next/link'
 import Head from 'next/head'
