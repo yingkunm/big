@@ -7,42 +7,7 @@ import Link from 'next/link'
 import Head from 'next/head'
 import Feed from '../components/feed/feed'
 function Home(props){
-    const [list, setList] = useState([]);
-    useEffect(() => { 
-        const handler = () => {
-            let scrollH = document.documentElement.scrollHeight, 
-                clientH = document.documentElement.clientHeight,
-                scrollT = document.documentElement.scrollTop;
-            if(scrollH-clientH<=scrollT+20){
-                fetch("/api/news").then(async (res) => {
-                    const resp = await res.json();
-                    setList(l=>[...l,...resp.data]);
-                });
-
-            }
-        };
-
-        window.addEventListener('scroll', throttle(handler,500), { passive: true });
-
-        return () => {
-          window.removeEventListener('scroll', throttle(handler,500));
-        };
-    }, []);
-
-    var throttle = function(func, delay){
-        var timer = null;
-        return function(){
-            var context = this;
-            var args = arguments;
-            if(!timer){
-                timer = setTimeout(function(){
-                    func.apply(context, args);
-                    timer = null;
-                },delay);
-            }
-        }
-    }
-
+    
     return(
   
     <div className={styles.container}>
