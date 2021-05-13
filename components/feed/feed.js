@@ -1,12 +1,8 @@
-import React, { useEffect, useState } from "react";
-import fetch from 'isomorphic-unfetch'
-import styles from '../styles/Home.module.css'
-import Head1 from '../components/Head/head1'
-import Footer from '../components/Footer/footer'
+import styles from "./feed.module.css"
+import React,{useEffect,useState} from "react";
 import Link from 'next/link'
-import Head from 'next/head'
-import Feed from '../components/feed/feed'
-function Home(props){
+
+export default function feed(){
     const [list, setList] = useState([]);
     useEffect(() => { 
         const handler = () => {
@@ -18,7 +14,6 @@ function Home(props){
                     const resp = await res.json();
                     setList(l=>[...l,...resp.data]);
                 });
-
             }
         };
 
@@ -44,18 +39,10 @@ function Home(props){
     }
 
     return(
-  
-    <div className={styles.container}>
-    <Head>
-        <title>今日头条 - TouTiao.com</title>
-    </Head>
-    <Head1/>
-    <Footer/>
-    <div className={styles.news_container}>
-        {props.feedList.map((i) => {
+        <div className={styles.news_container}>
+        {list.map((i) => {
             if(i.mode==="top"){
                 return (
-                    
                     <div className={styles.singlecontainer} >
                     <Link href='/secondpage'>
                     <a>
@@ -152,7 +139,6 @@ function Home(props){
                         <h2 className={styles.h}>{i.title}</h2>
                         <img src={i.img} className={styles.big_pic}/>
                         <div className={styles.footbar}>
-                                <span className={styles.set_big}>&nbsp;广告&nbsp;</span>
                                 <a>&nbsp;{i.media}</a>
                                 <a>&nbsp;评论&nbsp;{i.recommend}</a>
                                 <a>&nbsp;{i.time}</a>
@@ -165,17 +151,8 @@ function Home(props){
                 );
             }
         })}
-        
-        </div>
-        <Feed/>
+    
+    
     </div>
-  )}
-
-  Home.getInitialProps= async function () {
-    let res= await fetch ('http://localhost:3000/news.json');
-    let data= await res.json();
-    console.log(data);
-    return{feedList:data};
+    );
 }
-
-export default Home;
