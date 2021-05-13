@@ -22,7 +22,7 @@
 .logo{
     width: 42px;
     height: 42px;
-    background: url(http://s3.bytecdn.cn/growth/fe_sdk/image/banner_toutiao_icon_bce0b302.png) no-repeat;
+    background: url(/img/toutiao.jpeg) no-repeat;
     overflow: hidden;
     background-size: 100% 100%;
     border: 1px solid #eee;
