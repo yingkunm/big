@@ -152,6 +152,7 @@ function Home(props){
                         <h2 className={styles.h}>{i.title}</h2>
                         <img src={i.img} className={styles.big_pic}/>
                         <div className={styles.footbar}>
+                                <span className={styles.set_big}>&nbsp;广告&nbsp;</span>
                                 <a>&nbsp;{i.media}</a>
                                 <a>&nbsp;评论&nbsp;{i.recommend}</a>
                                 <a>&nbsp;{i.time}</a>
