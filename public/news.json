@@ -36,7 +36,7 @@
   "media": "懂车帝甄选",
   "recommend": 0,
   "time": "1小时前",
-  "img": "http://sf3-ttcdn-tos.pstatp.com/img/ad-tetris-site/file/1616566098379/5bc17d8277f6f6b287f3ed3c6b99e522~640x0.image?from=ad"
+  "img": "img/imgh3.jpg"
 },
 {
   "mode": "words&pic",
@@ -86,19 +86,19 @@
   "media": "中国证券报",
   "recommend": 254,
   "time": "5小时前",
-  "img": "http://p6.toutiaoimg.com/img/pgc-image/2cfe325b4a2a459cba3165dbb6ed5e5b~tplv-tt-cs0:640:360.jpg"
+  "img": "/img/imgh1.jpg"
 },
 {
   "mode": "words&pic",
   "title": "吓人！这才是美国因新冠死亡的“总人数”？美国新报告震撼世界",
   "media": "环球时报",
   "recommend": 308,
-  "img": "http://p5.toutiaoimg.com/img/tos-cn-i-0004/20b99bc90b45485584032154b7c42883~tplv-tt-cs0:640:360.jpg"
+  "img": "/img/imgh2.jpg"
 },
 {
   "mode": "three_pic",
   "title": "汶川地震13年，看看这群少年，很励志",
   "media": "光明网",
   "recommend": 67,
-  "img": ["https://p3.pstatp.com/list/pgc-image/SXAjGojDR66u2P","https://p3.pstatp.com/list/pgc-image/SX9UhL2ENmLcNZ", "https://p3.pstatp.com/list/pgc-image/SX9Ugo1IaU5DCT"]
+  "img": ["img/imgh4.jpg","img/imgh5.jpg", "img/imgh6.jpg"]
 }]

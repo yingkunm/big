@@ -23,7 +23,8 @@ export default function feed(){
           window.removeEventListener('scroll', throttle(handler,500));
         };
     }, []);
-
+    
+    //节流函数
     var throttle = function(func, delay){
         var timer = null;
         return function(){
